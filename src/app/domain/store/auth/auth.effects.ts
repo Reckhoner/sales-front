@@ -4,14 +4,14 @@ import { Actions, createEffect, ofType } from "@ngrx/effects";
 import * as AuthActions from './auth.actions';
 import { catchError, exhaustMap, map, switchMap, tap } from "rxjs";
 import { of } from 'rxjs';
-import { AuthAPiService } from "@app/data/services/auth/auth.service";
+import { AuthService } from "@app/data/services/auth/auth.service";
 
 @Injectable()
 export class AuthEffects {
     constructor(
         private actions$: Actions,
         private _router: Router,
-        private _authService: AuthAPiService
+        private _authService: AuthService
     ) { }
 
     login$ = createEffect(() =>

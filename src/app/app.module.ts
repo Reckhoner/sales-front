@@ -9,14 +9,12 @@ import { LayoutModule } from './presentation/layout/layout.module';
 import { appEffects, appReducer } from './domain/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools'; // Import the StoreDevtoolsModule
 import { CoreModule } from './core/core.module';
-import { KpiComponent } from './presentation/features/components/kpi/kpi.component';
 import { OrdersComponent } from './presentation/features/components/orders/orders.component';
 import { ProductsComponent } from './presentation/features/components/products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KpiComponent,
     OrdersComponent,
     ProductsComponent,
   ],

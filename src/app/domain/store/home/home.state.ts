@@ -1,7 +1,7 @@
 import { IKpi, IOrders, IProducts } from "@app/core/models/products.model";
 
 export interface HomeState {
-    kpis: IKpi[];
+    kpis: IKpi[] | null;
     loadingKpis: boolean | null;
     orders: IOrders[] | null;
     loadingOrders: boolean | null;

@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { KpiComponent } from '../components/kpi/kpi.component';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    KpiComponent
   ],
   imports: [
     CommonModule,

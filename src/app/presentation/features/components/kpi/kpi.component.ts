@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChange } from '@angular/core';
 import { IKpi } from '@app/core/models/products.model';
 
 @Component({
@@ -8,9 +8,11 @@ import { IKpi } from '@app/core/models/products.model';
 })
 export class KpiComponent implements OnInit {
   
-  @Input() kpi: IKpi;
+  @Input() kpi: IKpi | null;
 
-  constructor() { }
+  constructor() { 
+    this.kpi = null;
+  }
 
   ngOnInit() {
 
